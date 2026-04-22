@@ -816,8 +816,8 @@ function initFairyLights() {
     const pathLength = path.getTotalLength();
     const bulbCount = 25;
 
-    for (let i = 0; i <=bubleCount; i++) {
-        const distance = (i /bubleCount) * pathLength;
+    for (let i = 0; i <= bulbCount; i++) {   // ✅ FIXED
+        const distance = (i / bulbCount) * pathLength;
         const point = path.getPointAtLength(distance);
 
         const bulb = document.createElement('div');
